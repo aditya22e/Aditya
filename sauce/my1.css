@@ -1,0 +1,149 @@
+.openning{
+    background-image: url(background.png);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    align-content: center;
+    color: whitesmoke;
+    padding: 0;
+    font-size: larger;
+}
+.about{
+    background-color: black;
+    background-size: cover;
+    height: 90vh;
+    color: azure;
+    padding: 0;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    height: 0;
+    background-color: black;
+}
+.button{
+    border: whitesmoke 3px solid;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline;
+    margin-top: 10vh;
+}
+.image img {
+    width: 400px;
+    border-radius: 5px;
+    padding-left: 20%;
+    padding-top: 19%;
+}
+.aboutcontent {
+    max-width: 1000px;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 12%;
+}
+.aboutflex{
+    display: flex;
+}
+.gdp{
+    background-color: white;
+    background-size: cover;
+    height: 93vh;
+    color: #103e57;
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10%;
+}
+.gdph{
+    background-color: white;
+    color: #103e57;
+    font-size: 34px;
+    height: 15vh;
+    align-content: center;
+}
+.buttongdp{
+    border: #103e57 3px solid;
+    color: #103e57;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 15vh;
+}
+.inkspace{
+    background-color: black;
+    height: 80vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 7%;
+}
+.buttoninkspace{
+    border: white 3px solid;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 15vh;
+}
+.inkspace p{
+    color: gray;
+}
+.gdpflex{
+    display: flex;
+}
+.graphicflex{
+    display: flex;
+}
+.graphicflex img{
+    width: 400px;
+    border-radius: 5px;
+    padding-left: 20%;
+    padding-top: 19%;
+    margin: 10px;
+}
+.graphic{
+    background-color: white;
+    background-size: cover;
+    color: gray;
+    text-align: center;
+    height: 85vh;
+    margin-top: 7%;
+    font-size: 28px;
+}
+.works{
+    background-color: black;
+    background-size: cover;
+    height: 45vh;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+footer{
+    background-color: #d4742c;
+    padding: 20px;
+    text-align: center;
+    height: 15vh;
+    font-size: 22px;
+    align-content: center;
+}
+footer a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 22px;
+}
+.follow{
+    margin-right: 60%;
+}
+.contact{
+    margin-left: 60%;
+}
+.rights{
+    margin-top: 6%;
+}
