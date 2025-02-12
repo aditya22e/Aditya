@@ -4,9 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Dixit</title>
     <link rel="stylesheet" href="/sauce/my1.css">
+    <script src="./sauce/my1.js"></script>
 </head>
 <body>
-    <div class="openning"><h2>Hello there!</h2>
+    <div class="openning" id="hello">
+        <!-- Menu Button -->
+    <a class="menubutton" onclick="toggleMenu()">☰ Menu</a>
+
+    <!-- Slide-In Menu -->
+    <nav id="sideMenu" class="menu">
+        <a class="closebutton" onclick="toggleMenu()">✖</a>
+        <ul>
+            <li><a href="#hello">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#myworks">My Works</a></li>
+            <li><a href="#gdp">GDP</a></li>
+            <li><a href="#InkSpace">InkSpace</a></li>
+            <li><a href="#canva">Graphics</a></li>
+            <li><a href="#footer">Connect</a></li>
+        </ul>
+    </nav>
+        <h2>Hello there!</h2>
             <h1>Myself, Aditya Dixit</h1><br>
             <h3><a href="#aboutme" class="button">About Adi</a></h3>
     </div>
