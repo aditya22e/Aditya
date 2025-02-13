@@ -29,7 +29,7 @@
     .about{
         background-color: black;
         background-size: cover;
-        height: 87dvh;
+        height: 81dvh;
         color: azure;
         padding: 0;
         text-align: center;
@@ -88,7 +88,7 @@
     .gdp{
         background-color: white;
         background-size: cover;
-        height: 96vh;
+        height: 93vh;
         color: #103e57;
         padding-top: 5vh;
         text-align: center;
@@ -135,7 +135,7 @@
     }
     .inkspace{
         background-color: black;
-        height: 92vh;
+        height: 91vh;
         background-size: cover;
         color: white;
         text-align: center;
@@ -188,7 +188,7 @@
         background-size: cover;
         color: gray;
         text-align: center;
-        height: 69vh;
+        height: 60vh;
         margin-top: 7%;
         font-size: 16px;
         transform: translateY(50%);
@@ -206,7 +206,7 @@
     .works{
         background-color: black;
         background-size: cover;
-        height: 23vh;
+        height: 22vh;
         color: white;
         text-align: center;
         font-size: 16px;
