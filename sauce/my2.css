@@ -29,7 +29,7 @@
     .about{
         background-color: black;
         background-size: cover;
-        height: 92vh;
+        height: 87dvh;
         color: azure;
         padding: 0;
         text-align: center;
@@ -71,7 +71,7 @@
       }
     .image img {
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         margin-left: 0;
         margin-top: 11%;
     }
@@ -79,8 +79,8 @@
         align-content: center;
         text-align: left;
         margin-left: -4vh;
-        max-width: 320px;
-        font-size: 10px;
+        max-width: 100%;
+        font-size: 9px;
     }
     .aboutflex{
         display: block;
@@ -98,7 +98,7 @@
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
         overflow: auto;
-        max-width: 320px;
+        max-width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
@@ -116,8 +116,9 @@
     .gdpcontent{
         align-content: center;
         text-align: center;
-        margin-left: 1vh;
-        font-size: 10px;
+        margin-left: -4vh;
+        max-width: 100%;
+        font-size: 9px;
     }
     .buttongdp{
         border: #103e57 3px solid;
@@ -205,7 +206,7 @@
     .works{
         background-color: black;
         background-size: cover;
-        height: 30vh;
+        height: 23vh;
         color: white;
         text-align: center;
         font-size: 16px;
@@ -219,7 +220,7 @@
         white-space: nowrap;
     }
     .works p{
-        font-size: 10px;
+        font-size: 9px;
     }
     .works.active{
         transform: translateY(0);
