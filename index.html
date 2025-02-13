@@ -2,20 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Dixit</title>
+    <title>Introducing Myself</title>
     <link rel="stylesheet" href="/sauce/my1.css">
+    <link rel="icon" href="./sauce/me.jpg" type="image/x-icon">
     <script src="./sauce/my1.js"></script>
+    <link rel="stylesheet" href="./sauce/my2.css">
 </head>
 <body>
-    <div class="openning" id="hello">
-        <!-- Menu Button -->
+    <header id="header">
     <a class="menubutton" onclick="toggleMenu()">☰ Menu</a>
-
-    <!-- Slide-In Menu -->
     <nav id="sideMenu" class="menu">
         <a class="closebutton" onclick="toggleMenu()">✖</a>
         <ul>
-            <li><a href="#hello">Home</a></li>
+            <li><a href="#header">Home</a></li>
             <li><a href="#aboutme">About</a></li>
             <li><a href="#myworks">My Works</a></li>
             <li><a href="#gdp">GDP</a></li>
@@ -24,14 +23,16 @@
             <li><a href="#footer">Connect</a></li>
         </ul>
     </nav>
+    <div class="openning" id="hello"></div>
         <h2>Hello there!</h2>
             <h1>Myself, Aditya Dixit</h1><br>
             <h3><a href="#aboutme" class="button">About Adi</a></h3>
     </div>
+</header>
     <div class="about" id="aboutme">
         <h1>About me</h1>
         <div class="aboutflex">
-        <div class="image">
+        <div class="image" id="image">
             <img src="./sauce/me.jpg" alt="Me">
         </div>
         <div class="aboutcontent">
@@ -72,7 +73,7 @@
             <div class="image">
                 <img src="./sauce/LOGO GDP.png" alt="GDP">
             </div>
-            <div class="aboutcontent">
+            <div class="gdpcontent">
                 <p>GDP is an innovative and dynamic student committee dedicated to</p>
                 <p>fostering growth, skill development, and leadership across multiple domains.</p>
                 <p>The committee is divided into five specialized departments,</p>
