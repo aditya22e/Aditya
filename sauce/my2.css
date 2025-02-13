@@ -1,0 +1,342 @@
+@media all and (max-width: 480px){
+    .openning{
+        text-align: center;
+        height: auto;
+        align-content: center;
+        color: whitesmoke;
+        padding: 0;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    header{
+        background-image: url(background.png);
+        background-size: cover;
+        text-align: center;
+        height: 100dvh;
+        align-content: center;
+        color: whitesmoke;
+        padding: 0;
+        font-size: 16px;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        background-attachment: fixed;
+    }
+    .about{
+        background-color: black;
+        background-size: cover;
+        height: 92vh;
+        color: azure;
+        padding: 0;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 5vh;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .about.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+        height: 0;
+        background-color: black;
+    }
+    .button{
+        border: whitesmoke 3px solid;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline;
+        margin-top: 5vh;    
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: white;
+        color: #103e57;
+      }
+    .image img {
+        width: 300px;
+        border-radius: 5px;
+        margin-left: 0;
+        margin-top: 11%;
+    }
+    .aboutcontent {
+        align-content: center;
+        text-align: left;
+        margin-left: -4vh;
+        max-width: 320px;
+        font-size: 10px;
+    }
+    .aboutflex{
+        display: block;
+    }
+    .gdp{
+        background-color: white;
+        background-size: cover;
+        height: 96vh;
+        color: #103e57;
+        padding-top: 5vh;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10%;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s;
+        overflow: auto;
+        max-width: 320px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .gdp.active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .gdph{
+        background-color: white;
+        color: #103e57;
+        font-size: 14px;
+        height: 15vh;
+        align-content: center;
+    }
+    .gdpcontent{
+        align-content: center;
+        text-align: center;
+        margin-left: 1vh;
+        max-width: 320px;
+        font-size: 10px;
+    }
+    .buttongdp{
+        border: #103e57 3px solid;
+        color: #103e57;
+        padding: 5px 12px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 15vh;
+        transition: background-color 0.3s ease;
+    }
+    .buttongdp:hover{
+        background-color: #103e57;
+        color: aliceblue;
+    }
+    .inkspace{
+        background-color: black;
+        height: 92vh;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 5%;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .inkspace.active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .buttoninkspace{
+        border: white 2px solid;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 10px;
+        margin-left: 100;
+        text-decoration: none;
+        margin-top: 15vh;
+        transition: background-color .3s ease;
+    }
+    .buttoninkspace:hover{
+        background-color: white;
+        color: black;
+    }
+    .inkspace p{
+        color: gray;
+    }
+    .gdpflex{
+        display: block;
+    }
+    .graphicflex{
+        display: flex;
+    }
+    .graphicflex img{
+        width: 250px;
+        border-radius: 5px;
+        padding-left: 20%;
+        padding-top: 19%;
+        margin: 10px;
+    }
+    .graphic{
+        background-color: white;
+        background-size: cover;
+        color: gray;
+        text-align: center;
+        height: 69vh;
+        margin-top: 7%;
+        font-size: 16px;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .graphic.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .works{
+        background-color: black;
+        background-size: cover;
+        height: 30vh;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        max-width: 320px;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .works p{
+        font-size: 10px;
+    }
+    .works.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    footer{
+        background-color: #d4742c;
+        padding: 20px;
+        text-align: center;
+        height: 12vh;
+        font-size: 14px;
+        align-content: center;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    footer a{
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 11px;
+        overflow: auto;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .follow{
+        margin-right: 60%;
+    }
+    .contact{
+        margin-right: 60%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+    .rights{
+        margin-top: 15%;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .menubutton {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+        border: rgb(243, 191, 81) 2px solid;
+        padding: 10px 20px;
+        cursor: pointer;
+        z-index: 1001;
+        border-radius: 5px;
+        transition: background-color .3s ease;
+    }
+    .menubutton:hover{
+        background-color: rgb(243, 191, 81);
+        color: #103e57;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 135px;
+        height: 100dvh;
+        background: #333;
+        color: white;
+        padding-top: 60px;
+        transition: left 0.4s ease-in-out;
+        z-index: 1000;
+    }
+    .menu.active {
+        left: 0;
+    }
+    .closebutton {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: rgb(243, 191, 81);
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu ul li {
+        padding: 15px;
+        text-align: left;
+    }
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+    .menu ul li a:hover {
+        background: yellow;
+        color: black;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+}
+    
