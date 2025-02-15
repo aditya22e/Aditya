@@ -1,4 +1,4 @@
-@media all and (max-width: 480px){
+@media screen and (max-width: 480px){
     .openning{
         text-align: center;
         height: auto;
@@ -28,8 +28,8 @@
     }
     .about{
         background-color: black;
-        background-size: cover;
-        height: 81dvh;
+        background-size: contain;
+        height: auto;
         color: azure;
         padding: 0;
         text-align: center;
@@ -38,6 +38,7 @@
         transform: translateX(-100%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
+        word-wrap: break-word;
         overflow: auto;
         max-width: 100%;
         text-overflow: ellipsis;
@@ -50,7 +51,7 @@
     body{
         margin: 0;
         padding: 0;
-        line-height: 0;
+        line-height: 1.6;
         height: 0;
         background-color: black;
     }
@@ -79,21 +80,26 @@
         align-content: center;
         text-align: left;
         margin-left: -4vh;
-        max-width: 100%;
-        font-size: 9px;
+        word-wrap: break-word;
+        overflow: visible;
+        text-overflow: ellipsis;
+        word-wrap: normal;
+        max-width: 90%;
+        font-size: 10px;
     }
     .aboutflex{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .gdp{
         background-color: white;
         background-size: cover;
-        height: 93vh;
+        height: auto;
         color: #103e57;
         padding-top: 5vh;
         text-align: center;
         font-size: 16px;
-        margin-top: 10%;
+        padding-bottom: 8%;
         transform: translateX(100%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
@@ -117,8 +123,9 @@
         align-content: center;
         text-align: center;
         margin-left: -4vh;
-        max-width: 100%;
-        font-size: 9px;
+        max-width: 90%;
+        font-size: 10px;
+        overflow: visible;
     }
     .buttongdp{
         border: #103e57 3px solid;
@@ -135,12 +142,13 @@
     }
     .inkspace{
         background-color: black;
-        height: 91vh;
+        height: auto;
         background-size: cover;
         color: white;
         text-align: center;
         font-size: 28px;
-        margin-top: 5%;
+        padding-top: 5%;
+        padding-bottom: 7%;
         transform: translateX(-100%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
@@ -171,7 +179,8 @@
         color: gray;
     }
     .gdpflex{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .graphicflex{
         display: flex;
@@ -188,8 +197,9 @@
         background-size: cover;
         color: gray;
         text-align: center;
-        height: 60vh;
-        margin-top: 7%;
+        height: auto;
+        padding-top: 7%;
+        padding-bottom: 7%;
         font-size: 16px;
         transform: translateY(50%);
         opacity: 0;
@@ -206,21 +216,22 @@
     .works{
         background-color: black;
         background-size: cover;
-        height: 22vh;
+        height: auto;
         color: white;
         text-align: center;
         font-size: 16px;
+        padding-bottom: 10%;
         max-width: 320px;
         transform: translateY(50%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: auto;
+        overflow: visible;
         max-width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
     .works p{
-        font-size: 9px;
+        font-size: 10px;
     }
     .works.active{
         transform: translateY(0);
@@ -230,7 +241,7 @@
         background-color: #d4742c;
         padding: 20px;
         text-align: center;
-        height: 12vh;
+        height: auto;
         font-size: 14px;
         align-content: center;
         overflow: auto;
@@ -253,11 +264,9 @@
     }
     .contact{
         margin-right: 60%;
-        margin-left: 0;
-        margin-top: 8%;
     }
     .rights{
-        margin-top: 15%;
+        margin-top: 7%;
     }
     @keyframes fadeIn {
         from {
@@ -339,4 +348,3 @@
     }
     
 }
-    
