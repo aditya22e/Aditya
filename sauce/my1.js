@@ -18,7 +18,7 @@ document.addEventListener("scroll", function () {
     let position = element.getBoundingClientRect().bottom;
     let screenHeight = window.innerHeight;
 
-    if(position < screenHeight * 0.25 ){
+    if(position < screenHeight * 0.35 ){
         element.classList.remove("active")
     }
 });
@@ -39,7 +39,7 @@ document.addEventListener("scroll", function () {
     let position = element.getBoundingClientRect().bottom;
     let screenHeight = window.innerHeight;
 
-    if (position < screenHeight * 0.25) {
+    if (position < screenHeight * 0.35) {
         element.classList.remove("active");
     }
 });
@@ -69,7 +69,7 @@ document.addEventListener("scroll", function () {
     let position = element.getBoundingClientRect().top;
     let screenHeight = window.innerHeight;
 
-    if (position < screenHeight * 0.75) {
+    if (position < screenHeight * 0.65) {
         element.classList.add("active");
     }
     else{
@@ -81,7 +81,7 @@ document.addEventListener("scroll", function () {
     let position = element.getBoundingClientRect().bottom;
     let screenHeight = window.innerHeight;
 
-    if (position < screenHeight * 0.25) {
+    if (position < screenHeight * 0.35) {
         element.classList.remove("active");
     }
 });
@@ -97,4 +97,3 @@ document.addEventListener("scroll", function () {
         element.classList.remove("active")
     }
 });
-
