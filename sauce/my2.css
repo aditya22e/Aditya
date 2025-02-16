@@ -1,23 +1,26 @@
-@media screen and (max-width: 480px){
+@media all and (max-width: 480px){
     .openning{
         text-align: center;
         height: auto;
         align-content: center;
         color: whitesmoke;
         padding: 0;
+        font-size: larger;
+        font-size: 40px;
         overflow: auto;
         max-width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
-    }
+    }  
     header{
-        background-image: url(background.png);
+        background-image: url(bg0.jpg);
         background-size: cover;
         text-align: center;
         height: 100dvh;
         align-content: center;
         color: whitesmoke;
         padding: 0;
+        font-size: larger;
         font-size: 16px;
         overflow: auto;
         max-width: 100%;
@@ -26,23 +29,29 @@
         position: relative;
         background-attachment: fixed;
     }
+    .bg1{
+        background-image: url(./animation3.gif);
+        height: auto;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .about{
-        background-color: black;
-        background-size: contain;
+        background-color: transparent;
+        background-size: cover;
         height: auto;
         color: azure;
-        padding: 0;
+        padding-top: 10vh;
         text-align: center;
-        font-size: 16px;
-        margin-top: 5vh;
+        white-space: wrap;
+        word-wrap: break-word;
+        font-size: 22px;
         transform: translateX(-100%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
-        word-wrap: break-word;
-        overflow: auto;
+        overflow: wrap;
         max-width: 100%;
         text-overflow: ellipsis;
-        white-space: nowrap;
     }
     .about.active {
         transform: translateX(0);
@@ -54,9 +63,9 @@
         line-height: 1;
         height: 0;
         background-color: black;
-    overflow-x: hidden;
-    height: 100%;
-    width: 100%;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
     }
     .button{
         border: whitesmoke 3px solid;
@@ -66,7 +75,7 @@
         text-decoration: none;
         display: inline;
         margin-top: 5vh;    
-        font-size: 14px;
+        font-size: 28px;
         transition: background-color 0.3s ease;
     }
     .button:hover {
@@ -74,66 +83,71 @@
         color: #103e57;
       }
     .image img {
-        width: 300px;
-        border-radius: 10px;
-        margin-left: 0;
-        margin-top: 11%;
+        width: 220px;
+        border-radius: 5px;
+        margin-left: 4%;
+        margin-top: 19%;
+        transition: .3s ease-in-out;
+    }
+    .image img:hover{
+        width: 255px;
     }
     .aboutcontent {
-        align-content: center;
+        display: block;
+        opacity: 1;
+        max-width: 265px;
         text-align: left;
-        margin-left: -4vh;
-        word-wrap: break-word;
-        overflow: visible;
+        font-size: 11px;
+        padding-top: 3%;
+        padding-left: 12%;
         text-overflow: ellipsis;
-        word-wrap: normal;
-        max-width: 90%;
-        font-size: 10px;
+        overflow: wrap;
+        word-wrap: break-word;
+        white-space: wrap;
     }
-    .aboutflex{
-        display: flex;
-        flex-direction: column;
+    .bg2{
+        height: auto;
+        background-image: url(./LOGO\ GDP.png);
+        background-color: rgb(0, 0, 0, 0.4);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-attachment: fixed;
     }
     .gdp{
-        background-color: white;
-        background-size: cover;
+        background: transparent;
         height: auto;
         color: #103e57;
         padding-top: 5vh;
         text-align: center;
-        font-size: 16px;
-        padding-bottom: 8%;
+        font-size: 22px;
         transform: translateX(100%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: auto;
+        overflow: wrap;
+        word-wrap: break-word;
         max-width: 100%;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: wrap;
+        padding-bottom: 40px;
     }
     .gdp.active{
         transform: translateX(0);
         opacity: 1;
     }
-    .gdph{
-        background-color: white;
-        color: #103e57;
-        font-size: 14px;
-        height: 15vh;
-        align-content: center;
-    }
-    .gdpcontent{
-        align-content: center;
-        text-align: center;
-        margin-left: -4vh;
-        max-width: 90%;
-        font-size: 10px;
-        overflow: visible;
+    .gdpcontent {
+        max-width: 800px;
+        text-align: left;
+        padding-top: 3%;
+        font-size: 11px;
+        padding-left: 12%;
+        word-wrap: break-word;
+        white-space: wrap;
+        overflow: wrap;
     }
     .buttongdp{
         border: #103e57 3px solid;
         color: #103e57;
-        padding: 5px 12px;
+        padding: 10px 20px;
         border-radius: 10px;
         text-decoration: none;
         margin-top: 15vh;
@@ -143,33 +157,41 @@
         background-color: #103e57;
         color: aliceblue;
     }
+    .bg3{
+        background-image: url(./InkSpace\(full\).png);
+        background-color: rgb(0, 0, 0, 0.8);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        background-attachment: fixed;
+    }
     .inkspace{
-        background-color: black;
+        background-color: transparent;
         height: auto;
         background-size: cover;
         color: white;
         text-align: center;
-        font-size: 28px;
-        padding-top: 5%;
-        padding-bottom: 7%;
+        font-size: 22px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
         transform: translateX(-100%);
         opacity: 0;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: auto;
+        overflow: wrap;
         max-width: 100%;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: wrap;
     }
     .inkspace.active{
         transform: translateX(0);
         opacity: 1;
     }
     .buttoninkspace{
-        border: white 2px solid;
+        border: white 3px solid;
         color: white;
-        padding: 5px 12px;
+        padding: 10px 20px;
         border-radius: 10px;
-        margin-left: 100;
         text-decoration: none;
         margin-top: 15vh;
         transition: background-color .3s ease;
@@ -181,28 +203,43 @@
     .inkspace p{
         color: gray;
     }
-    .gdpflex{
+    .flex{
         display: flex;
         flex-direction: column;
     }
     .graphicflex{
         display: flex;
+        flex-direction: row;
     }
     .graphicflex img{
-        width: 250px;
+        width: 200px;
         border-radius: 5px;
         padding-left: 20%;
         padding-top: 19%;
         margin: 10px;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+    .graphicflex img:hover{
+        width: 230px;
+    }
+    .bg4{
+        background-color: rgb(0, 0, 0, 0.6);
+        background-image: url(./animation2.gif);
+        background-blend-mode: darken;
+        background-size: cover;
+        height: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .graphic{
-        background-color: white;
+        background-color: transparent;
         background-size: cover;
         color: gray;
         text-align: center;
-        height: auto;
-        padding-top: 7%;
-        padding-bottom: 7%;
+        height: 62vh;
+        margin-top: 0;
+        padding-top: 0;
         font-size: 16px;
         transform: translateY(50%);
         opacity: 0;
@@ -217,24 +254,25 @@
         opacity: 1;
     }
     .works{
-        background-color: black;
         background-size: cover;
         height: auto;
         color: white;
         text-align: center;
-        font-size: 16px;
-        padding-bottom: 10%;
-        max-width: 320px;
+        align-content: center;
+        font-size: 24px;
         transform: translateY(50%);
         opacity: 0;
+        padding-bottom: 5vh;
         transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: visible;
-        max-width: 100%;
+        overflow: wrap;
+        word-wrap: break-word;
+        margin-left: 13%;
+        margin-right: 13%;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: wrap;
     }
     .works p{
-        font-size: 10px;
+        font-size: 11px;
     }
     .works.active{
         transform: translateY(0);
@@ -244,19 +282,20 @@
         background-color: #d4742c;
         padding: 20px;
         text-align: center;
-        height: auto;
-        font-size: 14px;
+        height: 15vh;
+        font-size: 11px;
         align-content: center;
         overflow: auto;
         max-width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
+        display: block;
     }
     footer a{
         margin: 0 10px;
         text-decoration: none;
         color: #333;
-        font-size: 11px;
+        font-size: 14px;
         overflow: auto;
         max-width: 100%;
         text-overflow: ellipsis;
@@ -264,12 +303,19 @@
     }
     .follow{
         margin-right: 60%;
+        transition: .3s ease-in;
+    }
+    .follow a:hover{
+        color: black;
     }
     .contact{
         margin-right: 60%;
     }
+    .contact a:hover{
+        color: black;
+    }
     .rights{
-        margin-top: 7%;
+        margin-top: 3%;
     }
     @keyframes fadeIn {
         from {
@@ -307,7 +353,7 @@
         position: fixed;
         top: 0;
         left: -250px;
-        width: 135px;
+        width: 250px;
         height: 100dvh;
         background: #333;
         color: white;
@@ -341,13 +387,12 @@
         text-decoration: none;
         font-size: 18px;
         display: block;
+        transition: .25s ease-in-out;
     }
     .menu ul li a:hover {
-        background: yellow;
         color: black;
     }
     html{
         scroll-behavior: smooth;
-    }
-    
+    }    
 }
