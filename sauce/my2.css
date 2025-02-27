@@ -1,398 +1,63 @@
 @media all and (max-width: 480px){
     .openning{
-        text-align: center;
-        height: auto;
-        align-content: center;
-        color: whitesmoke;
-        padding: 0;
-        font-size: larger;
-        font-size: 40px;
-        overflow: auto;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }  
+        flex-direction: column;
+        gap: 30vh;
+        font-size: 22px;
+    }
     header{
-        background-image: url(bg0.jpg);
-        background-size: cover;
-        text-align: center;
         height: 100dvh;
-        align-content: center;
-        color: whitesmoke;
-        padding: 0;
-        font-size: larger;
-        font-size: 16px;
-        overflow: auto;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        position: relative;
-        background-attachment: fixed;
-    }
-    .bg1{
-        background-image: url(./animation3.gif);
-        height: auto;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .about{
-        background-color: transparent;
-        background-size: cover;
-        height: auto;
-        color: azure;
-        padding-top: 10vh;
-        text-align: center;
-        white-space: wrap;
-        word-wrap: break-word;
-        font-size: 22px;
-        transform: translateX(-100%);
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: wrap;
-        max-width: 100%;
-        text-overflow: ellipsis;
-    }
-    .about.active {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-        height: 0;
-        background-color: black;
-        overflow-x: hidden;
-        height: 100%;
-        width: 100%;
-    }
-    .button{
-        border: whitesmoke 3px solid;
-        color: whitesmoke;
-        padding: 10px 20px;
-        border-radius: 10px;
-        text-decoration: none;
-        display: inline;
-        margin-top: 5vh;    
-        font-size: 28px;
-        transition: background-color 0.3s ease;
-    }
-    .button:hover {
-        background-color: white;
-        color: #103e57;
-      }
-    .image img {
-        width: 220px;
-        border-radius: 5px;
-        margin-left: 4%;
-        margin-top: 19%;
-        transition: .3s ease-in-out;
-    }
-    .image img:hover{
-        width: 255px;
-    }
-    .aboutcontent {
-        display: block;
-        opacity: 1;
-        max-width: 265px;
-        text-align: left;
-        font-size: 11px;
-        padding-top: 3%;
-        padding-left: 12%;
-        text-overflow: ellipsis;
-        overflow: wrap;
-        word-wrap: break-word;
-        white-space: wrap;
-    }
-    .bg2{
-        height: auto;
-        background-image: url(./LOGO\ GDP.png);
-        background-color: rgb(0, 0, 0, 0.4);
-        background-blend-mode: darken;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .gdp{
-        background: transparent;
-        height: auto;
-        color: #103e57;
-        padding-top: 5vh;
-        text-align: center;
-        font-size: 22px;
-        transform: translateX(100%);
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: wrap;
-        word-wrap: break-word;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: wrap;
-        padding-bottom: 40px;
-    }
-    .gdp.active{
-        transform: translateX(0);
-        opacity: 1;
-    }
-    .gdpcontent {
-        max-width: 800px;
-        text-align: left;
-        padding-top: 3%;
-        font-size: 11px;
-        padding-left: 12%;
-        word-wrap: break-word;
-        white-space: wrap;
-        overflow: wrap;
-    }
-    .buttongdp{
-        border: #103e57 3px solid;
-        color: #103e57;
-        padding: 10px 20px;
-        border-radius: 10px;
-        text-decoration: none;
-        margin-top: 15vh;
-        transition: background-color 0.3s ease;
-    }
-    .buttongdp:hover{
-        background-color: #103e57;
-        color: aliceblue;
-    }
-    .bg3{
-        background-image: url(./InkSpace\(full\).png);
-        background-color: rgb(0, 0, 0, 0.8);
-        background-blend-mode: darken;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: auto;
-        background-attachment: fixed;
-    }
-    .inkspace{
-        background-color: transparent;
-        height: auto;
-        background-size: cover;
-        color: white;
-        text-align: center;
-        font-size: 22px;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        transform: translateX(-100%);
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: wrap;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: wrap;
-    }
-    .inkspace.active{
-        transform: translateX(0);
-        opacity: 1;
-    }
-    .buttoninkspace{
-        border: white 3px solid;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 10px;
-        text-decoration: none;
-        margin-top: 15vh;
-        transition: background-color .3s ease;
-    }
-    .buttoninkspace:hover{
-        background-color: white;
-        color: black;
-    }
-    .inkspace p{
-        color: gray;
     }
     .flex{
-        display: flex;
         flex-direction: column;
     }
-    .graphicflex{
-        display: flex;
-        flex-direction: row;
-    }
-    .graphicflex img{
-        width: 200px;
-        border-radius: 5px;
-        padding-left: 20%;
-        padding-top: 19%;
-        margin: 10px;
-        transition-duration: .3s;
-        transition-timing-function: ease-in-out;
-    }
-    .graphicflex img:hover{
-        width: 230px;
-    }
-    .bg4{
-        background-color: rgb(0, 0, 0, 0.6);
-        background-image: url(./animation2.gif);
-        background-blend-mode: darken;
-        background-size: cover;
+    .about{
+        font-size: 22px;
         height: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
-    .graphic{
-        background-color: transparent;
-        background-size: cover;
-        color: gray;
-        text-align: center;
-        height: 62vh;
-        margin-top: 0;
-        padding-top: 0;
-        font-size: 16px;
-        transform: translateY(50%);
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
-        overflow: auto;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+    .aboutcontent{
+        margin-right: 8px;
     }
-    .graphic.active{
-        transform: translateY(0);
-        opacity: 1;
+    .image img{
+        width: 250px;
+        margin: 0 0;
+    }
+    .image img:hover{
+        width: 280px;
     }
     .works{
-        background-size: cover;
+        font-size: 22px;
         height: auto;
-        color: white;
-        text-align: center;
-        align-content: center;
-        font-size: 24px;
-        transform: translateY(50%);
-        opacity: 0;
+    }
+    .gdp{
+        font-size: 22px;
+    }
+    .inkspace{
+        font-size: 22px;
+        height: auto;
         padding-bottom: 5vh;
-        transition: transform 0.5s ease-in-out, opacity 0.5s;
+    }
+    .graphicflex{
+        flex-direction: column;
+    }
+    .graphic{
+        height: auto;
         overflow: wrap;
         word-wrap: break-word;
-        margin-left: 13%;
-        margin-right: 13%;
-        text-overflow: ellipsis;
         white-space: wrap;
+        font-size: 22px;
+        padding-bottom: 5%;
     }
-    .works p{
-        font-size: 11px;
+    .graphicflex img{
+        width: 250px;
+        margin: 0 0;
     }
-    .works.active{
-        transform: translateY(0);
-        opacity: 1;
+    .graphicflex img:hover{
+        width: 280px;
     }
     footer{
-        background-color: #d4742c;
-        padding: 20px;
-        text-align: center;
-        height: 15vh;
-        font-size: 11px;
-        align-content: center;
-        overflow: auto;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        display: block;
+        font-size: 14px;
     }
     footer a{
-        margin: 0 10px;
-        text-decoration: none;
-        color: #333;
-        font-size: 14px;
-        overflow: auto;
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        font-size: 11px;
     }
-    .follow{
-        margin-right: 60%;
-        transition: .3s ease-in;
-    }
-    .follow a:hover{
-        color: black;
-    }
-    .contact{
-        margin-right: 60%;
-    }
-    .contact a:hover{
-        color: black;
-    }
-    .rights{
-        margin-top: 3%;
-    }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    @keyframes slideIn {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-    .menubutton {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        font-size: 20px;
-        border: rgb(243, 191, 81) 2px solid;
-        padding: 10px 20px;
-        cursor: pointer;
-        z-index: 1001;
-        border-radius: 5px;
-        transition: background-color .3s ease;
-    }
-    .menubutton:hover{
-        background-color: rgb(243, 191, 81);
-        color: #103e57;
-    }
-    .menu {
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 250px;
-        height: 100dvh;
-        background: #333;
-        color: white;
-        padding-top: 60px;
-        transition: left 0.4s ease-in-out;
-        z-index: 1000;
-    }
-    .menu.active {
-        left: 0;
-    }
-    .closebutton {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        background: none;
-        border: none;
-        color: rgb(243, 191, 81);
-        font-size: 24px;
-        cursor: pointer;
-    }
-    .menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    .menu ul li {
-        padding: 15px;
-        text-align: left;
-    }
-    .menu ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        display: block;
-        transition: .25s ease-in-out;
-    }
-    .menu ul li a:hover {
-        color: black;
-    }
-    html{
-        scroll-behavior: smooth;
-    }    
 }
