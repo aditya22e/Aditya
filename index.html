@@ -23,10 +23,65 @@
             <li><a href="#footer">Connect</a></li>
         </ul>
     </nav>
-    <div class="openning" id="hello"></div>
+    <div class="openning" id="hello">
+        <div>
         <h2>Hello there!</h2>
             <h1>Myself, Aditya Dixit</h1>
-            <h3><a href="#aboutme" class="button">About Adi</a></h3>
+            <div>
+            <h3>I am a <span class="typing-container"><span class="textani"></span></span></h3>
+            <script>
+                const words = ["Web Developer ","Programmer ", "Graphic Designer ", "Tech Enthusiast ", "Freelancer ","Explorer "];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingText = document.querySelector(".textani");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+
+            if (isDeleting) {
+                typingText.textContent = currentWord.substring(0, charIndex--);
+            } else {
+                typingText.textContent = currentWord.substring(0, charIndex++);
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, 1200);
+                setTimeout(typeEffect, delay); // Pause before deleting
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(typeEffect, 300);
+                setTimeout(typeEffect, delay); // Pause before typing next word
+            }
+
+            setTimeout(typeEffect, isDeleting ? 80 : 150);
+            setTimeout(typeEffect, delay); // Typing speed
+        }
+
+        typeEffect();
+            </script>
+        </div>
+    </div>
+            <div class="container">
+                <div class="cube big">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+                <div class="cube small">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
     </div>
 </header>
 <div class="bg1">
