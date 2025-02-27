@@ -395,6 +395,7 @@ html{
     display: flex;
     justify-content: center;
     place-items: center;
+    margin-left: 8vw;
 }
 
 
