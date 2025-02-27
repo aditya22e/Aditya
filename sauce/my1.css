@@ -1,23 +1,27 @@
 .openning{
-    text-align: center;
+    text-align: left;
     height: auto;
     align-content: center;
-    color: whitesmoke;
+    color: rgb(56, 54, 54);
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
     font-size: larger;
-    font-size: 40px;
-    overflow: auto;
+    font-size: 32px;
+    overflow: wrap;
     max-width: 100%;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: wrap;
+    margin-left: 40px;
 }  
 header{
-    background-image: url(bg0.jpg);
+    background-image: url(./43791855.jpg);
     background-size: cover;
     text-align: center;
     height: 100vh;
     align-content: center;
-    color: whitesmoke;
+    color: rgba(83, 76, 76, 0.566);
     padding: 0;
     font-size: larger;
     font-size: 40px;
@@ -36,8 +40,6 @@ header{
     background-size: cover;
 }
 .about{
-    background-color: transparent;
-    background-size: cover;
     height: 90vh;
     color: azure;
     padding-top: 10vh;
@@ -67,8 +69,8 @@ body{
     width: 100%;
 }
 .button{
-    border: whitesmoke 3px solid;
-    color: whitesmoke;
+    border: black 3px solid;
+    color: black;
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -78,7 +80,7 @@ body{
     transition: background-color 0.3s ease;
 }
 .button:hover {
-    background-color: white;
+    background-color: black;
     color: #103e57;
   }
 .image img {
@@ -210,9 +212,9 @@ body{
 .graphicflex img{
     width: 400px;
     border-radius: 5px;
-    padding-left: 20%;
-    padding-top: 19%;
-    margin: 10px;
+    margin-top: 20%;
+    margin-left: 20%;
+    padding: 10px;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
@@ -251,7 +253,7 @@ body{
 }
 .works{
     background-size: cover;
-    height: 68vh;
+    height: 89vh;
     color: white;
     text-align: center;
     align-content: center;
@@ -387,4 +389,126 @@ footer a{
 html{
     scroll-behavior: smooth;
 }
+.container {
+    transform-style: preserve-3d;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
 
+
+/* Cube */
+
+@keyframes big-cube-spin {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    50% {
+        transform: rotateY(360deg) rotateX(-360deg);
+    }
+    100% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+}
+
+@keyframes small-cube-spin {
+    0% {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform: rotateY(-360deg) rotateZ(360deg);
+    }
+    100% {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+.cube {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+    pointer-events: none;
+    perspective: 6000px;
+    transform-style: preserve-3d; 
+}
+
+.cube.big {
+    animation: big-cube-spin 4s linear infinite;
+}
+
+.cube.small {
+    scale: 0.35;
+    animation: small-cube-spin 8s linear infinite;
+    transition: 1s;
+    pointer-events: auto;
+}
+
+.cube.small:hover {
+    scale: .7;
+    transition: 1s ease-in-out;
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid rgba(var(--light-gray), 0.7);
+}
+
+.small > .face {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+.big > .face {
+    background-color: rgb(239, 183, 59, 0.15);
+}
+
+.face.front {
+    transform: translateZ(100px);
+}
+
+.face.back {
+    transform: rotateX(-180deg) translateZ(100px);
+}
+
+.face.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.face.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.face.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.face.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+:root {
+    --light-gray: 175, 175, 175;
+}
+
+.typing-container {
+    display: inline-block;
+}
+
+.textani {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: monospace;
+    border-right: 3px solid black;
+    display: inline-block;
+    padding-right: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.textani {
+    animation: blink 0.8s step-end infinite;
+}
